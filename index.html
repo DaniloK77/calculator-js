@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clean, responsive calculator built with vanilla HTML, CSS and JavaScript.">
+    <meta name="theme-color" content="#0b0d17">
     <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
 </head>
 <body>
-    <div class="calc">
-      <section class="screen">0</section>
+    <main class="calc">
+      <output class="screen" aria-live="polite">0</output>
 
-      <section class="calc-buttons">
-        <div class="calc-button-row">
-          <button class="calc-button double" value="C">C</button>
-          <button class="calc-button" value="←">←</button>
-          <button class="calc-button" value="÷">÷</button>
-        </div>
-        <div class="calc-button-row">
-          <button class="calc-button" value="7">7</button>
-          <button class="calc-button" value="8">8</button>
-          <button class="calc-button" value="9">9</button>
-          <button class="calc-button" value="x">×</button>
-        </div>
-        <div class="calc-button-row">
-          <button class="calc-button" value="4">4</button>
-          <button class="calc-button" value="5">5</button>
-          <button class="calc-button" value="6">6</button>
-          <button class="calc-button" value="-">-</button>
-        </div>
-        <div class="calc-button-row">
-          <button class="calc-button" value="1">1</button>
-          <button class="calc-button" value="2">2</button>
-          <button class="calc-button" value="3">3</button>
-          <button class="calc-button" value="+">+</button>
-        </div>
-        <div class="calc-button-row">
-          <button class="calc-button triple" value="0">0</button>
-          <button class="calc-button" value="=">=</button>
-        </div>
+      <section class="calc-buttons" aria-label="Calculator keypad">
+        <button class="calc-button calc-button--clear span-2" value="C" aria-label="Clear">C</button>
+        <button class="calc-button calc-button--fn" value="←" aria-label="Backspace">←</button>
+        <button class="calc-button calc-button--op" value="÷" aria-label="Divide">÷</button>
+
+        <button class="calc-button" value="7">7</button>
+        <button class="calc-button" value="8">8</button>
+        <button class="calc-button" value="9">9</button>
+        <button class="calc-button calc-button--op" value="x" aria-label="Multiply">×</button>
+
+        <button class="calc-button" value="4">4</button>
+        <button class="calc-button" value="5">5</button>
+        <button class="calc-button" value="6">6</button>
+        <button class="calc-button calc-button--op" value="-" aria-label="Subtract">-</button>
+
+        <button class="calc-button" value="1">1</button>
+        <button class="calc-button" value="2">2</button>
+        <button class="calc-button" value="3">3</button>
+        <button class="calc-button calc-button--op" value="+" aria-label="Add">+</button>
+
+        <button class="calc-button span-3" value="0">0</button>
+        <button class="calc-button calc-button--equals" value="=" aria-label="Equals">=</button>
       </section>
-    </div>
+    </main>
     <script src="calculator.js"></script>
-    
 </body>
 </html>
