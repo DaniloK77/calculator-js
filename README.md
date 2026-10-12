@@ -13,15 +13,18 @@ A clean, responsive calculator built with **vanilla HTML, CSS and JavaScript** �
 
 ## Screenshots
 
-<!--
-  Add screenshots to docs/screenshots/ and reference them here, e.g.:
+### Desktop
 
-  | Desktop | Mobile |
-  | :-----: | :----: |
-  | ![Desktop view](docs/screenshots/desktop.png) | ![Mobile view](docs/screenshots/mobile.png) |
--->
+![Calculator on desktop](docs/screenshots/desktop.webp)
 
-_Screenshots coming soon._
+### Mobile and tablet
+
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="docs/screenshots/mobile.png" alt="Calculator on iPhone"><br><sub>iPhone</sub></td>
+    <td align="center" width="50%"><img src="docs/screenshots/tablet.webp" alt="Calculator on iPad"><br><sub>iPad</sub></td>
+  </tr>
+</table>
 
 ## Features
 
@@ -64,6 +67,8 @@ python3 -m http.server 8000
 ├── index.html       # Page structure and keypad markup
 ├── styles.css       # Layout, theme and responsive styles
 ├── calculator.js    # Calculator state and button handling
+├── docs/
+│   └── screenshots/ # Images used in this README
 └── README.md
 ```
 
